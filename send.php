@@ -3,7 +3,7 @@
  /* Здесь проверяется существование переменных */
  if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
  if (isset($_POST['name'])) {$name = $_POST['name'];}
- if (isset($_POST['param'])) {$name = $_POST['param'];}
+ if (isset($_POST['param'])) {$param = $_POST['param'];}
 
 
  
@@ -12,11 +12,16 @@
 $address = "gorkundp@yandex.ru";
  
 /* А здесь прописывается текст сообщения, \n - перенос строки */
+
  $mes = "Тема: Заявка с Кровли!
 \nИмя: $name
- \nТелефон: $phone
- \n Параметры: $param";
- 
+ \nТелефон: $phone";
+
+ if ($param) {
+  $mes = $mes.
+  "\n Параметры: $param";
+}
+
 /* А эта функция как раз занимается отправкой письма на указанный вами email */
 $sub="Заявка от $phone"; //сабж
 $email='Заказ <Крволя>'; // от кого
