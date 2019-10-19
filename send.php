@@ -3,7 +3,7 @@
  /* Здесь проверяется существование переменных */
  if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
  if (isset($_POST['name'])) {$name = $_POST['name'];}
-//  if (isset($_POST['param'])) {$name = $_POST['param'];}
+ if (isset($_POST['param'])) {$param = $_POST['param'];}
 
 
  
@@ -16,7 +16,9 @@ $address = "gorkundp@yandex.ru";
  $mes = "Тема: Заявка с Кровли!
 \nИмя: $name
  \nТелефон: $phone";
- 
+ if ($param) {
+   $mes = $mes."\nПараметры: $param";
+ }
  
 /* А эта функция как раз занимается отправкой письма на указанный вами email */
 $sub="Заявка от $phone"; //сабж
