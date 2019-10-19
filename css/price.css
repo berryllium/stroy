@@ -1,9 +1,9 @@
-.price ul {
+#price ul {
   padding: 0;
   margin: 0;
 }
 
-.price .container ul li {
+#price .container ul li {
   list-style-type: none;
   background-image: none;
 }
@@ -90,7 +90,7 @@
   border-left: 4px solid transparent
 }
 
-.price {
+#price {
   padding: 10vh 0
 }
 
