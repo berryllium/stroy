@@ -9548,7 +9548,7 @@ dl {
     display: flex;
     font-size: 30px;
     max-width: 500px;
-    padding: 5px 0 5px 15px;
+    /* padding: 5px 0 5px 15px; */
 }
 
 .subtex li {
