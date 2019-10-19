@@ -31,7 +31,7 @@ ini_set('short_open_tag', 'On');
 <!DOCTYPE html>
 <html>
 <head>
-    
+<meta charset="utf-8">    
        <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140055892-1"></script>
 <script>
