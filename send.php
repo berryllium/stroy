@@ -7,7 +7,8 @@
 
  
 /* Сюда впишите свою эл. почту */
- $address = "me-invest@bk.ru";
+//  $address = "me-invest@bk.ru";
+$address = "gorkundp@yandex.ru";
  
 /* А здесь прописывается текст сообщения, \n - перенос строки */
  $mes = "Тема: Заявка с Кровли!

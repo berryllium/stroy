@@ -12,5 +12,8 @@ function headerCalc() {
   $('.head_form__count1').on("change", function () {
     $('.inp_range_1').val($(this).val());
   });
+  // $('.js-pform-show').on("click", function () {
+
+  // });
 };
 headerCalc();

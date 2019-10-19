@@ -216,8 +216,8 @@
                         </div>
                         <div class="head_form__down">
                             <div class="head_form__item">
-                                <div class="btn btn_accent js-pform-show iexform-active" data-pform-id="main-popup-spb"
-                                    data-pform-position="СПБ: Получить расчет!">Получить расчет</div>
+                                <a href = "#modal_order" class="btn btn_accent js-pform-show iexform-active" data-pform-id="main-popup-spb"
+                                    data-pform-position="СПБ: Получить расчет!">Получить расчет</a>
                             </div>
                         </div>
                     </div>
@@ -2103,7 +2103,32 @@
         </div>
     </div>
 
-
+    <div class="remodal" style="max-width: 365px;border-radius: 5px;" data-remodal-id="modal_calc" role="dialog"
+        aria-labelledby="modal13Title" aria-describedby="modal13Desc">
+        <div class="remodalBorder">
+            <div class="form_wrap">
+                <div class="row">
+                    <div class="col-md-12 zag_mod_2" style="margin-top: 0px;">
+                        <p class="pull-right" style="font-size: 14px;color: #adb5c5;" data-remodal-action="close"
+                            aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></p>
+                        <p>Закажи расчет <span>стоимости</span></p>
+                        <p class="submod23">прямо сейчас и мы Вам перезвоним</p>
+                    </div>
+                    <div class="col-md-12">
+                        <form id="calc_form" method="post" action="send.php"
+                            onclick="yaCounter53280079.reachGoal ('otpravka'); return true;">
+                            <input type="text" name="name" placeholder="Ваше имя"><br>
+                            <input type="text" name="phone" placeholder="Ваш телефон"><br>
+                            <input type="hidden" name="city" value="msk">
+                            <button class="main_call_btn_link"
+                                style="box-shadow: none;
+                                        border: none;border-bottom: 4px solid #eebd2b;width: 260px;margin: 10px auto;">Оставить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="remodal" style="max-width: 365px;border-radius: 5px;" data-remodal-id="modal_order" role="dialog"
         aria-labelledby="modal13Title" aria-describedby="modal13Desc">
