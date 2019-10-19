@@ -17,10 +17,9 @@ $address = "gorkundp@yandex.ru";
 \nИмя: $name
  \nТелефон: $phone";
 
- if ($param) {
-  $mes = $mes.
-  "\n Параметры: $param";
-}
+//  if ($param) {
+//   $mes = $mes."\n Параметры: $param";
+// }
 
 /* А эта функция как раз занимается отправкой письма на указанный вами email */
 $sub="Заявка от $phone"; //сабж
