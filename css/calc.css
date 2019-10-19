@@ -1,11 +1,11 @@
 .head_form {
   background: rgba(255, 255, 255, .75);
   color: #000;
-  border: 5px solid #446efe
+  border: 5px solid #41547a
 }
 
 .head_form .head_form__up {
-  padding: 10px 40px
+  padding: 10px 20px
 }
 
 .head_form .head_form__down {
@@ -19,11 +19,19 @@
 
 .head_form .head_form__down .head_form__item .btn {
   font-size: 1.3em;
-  padding: 15px 0;
+  padding: 8px 0;
   text-transform: uppercase;
   font-weight: 700;
-  width: 100%
+  width: 100%;
+  transition: .4s;
+  background: #41547a;
+  color: #fff;
+  border-radius: 5px;
 }
+.head_form .head_form__down .head_form__item .btn:hover {
+  background: #22355b;
+}
+
 
 .head_form .head_form__list {
   display: -webkit-box;
@@ -63,13 +71,13 @@
   height: 4px;
   border: 0;
   padding: 0;
-  background: #3150ff;
+  background: #41547a;
   -webkit-appearance: none
 }
 
 .head_form .head_form__list .head_form__swipe .head_swipe .inp_range::-webkit-slider-thumb {
   -webkit-appearance: none;
-  background-color: #3150ff;
+  background-color: #41547a;
   width: 20px;
   height: 20px;
   -webkit-border-radius: 10px;
@@ -119,7 +127,7 @@
 .head_form__header {
   padding: 20px 0;
   color: #fff;
-  background: #446efe
+  background: #41547a
 }
 
 .head_form .head_form__list .head_form__swipe .head_form__count {
@@ -129,8 +137,8 @@
   border: 0;
   font-size: 1.2em;
   font-weight: 700;
-  color: #3150ff;
-  border: 1px solid #3150ff;
+  color: #41547a;
+  border: 1px solid #41547a;
   padding: 5px
 }
 
@@ -170,7 +178,7 @@
   width: 18px;
   height: 18px;
   background: #fff;
-  border: 1px solid #f8f8f8;
+  border: 1px solid gray;
   -webkit-border-radius: 100%;
   border-radius: 100%;
   position: absolute;
@@ -192,7 +200,7 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: #3150ff;
+  background: #41547a;
   width: 70%;
   height: 70%;
   opacity: 0;
