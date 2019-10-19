@@ -1,0 +1,480 @@
+.price ul {
+  padding: 0;
+  margin: 0;
+}
+
+.price .container ul li {
+  list-style-type: none;
+  background-image: none;
+}
+.price_mnav {
+  width: 100%;
+  position: relative;
+  padding: 0 15px;
+  margin-bottom: 20px
+}
+
+.price_mnav.show .price_mnav__list {
+  display: block
+}
+
+.price_left__mprice {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  margin: 1em 0;
+  text-transform: uppercase
+}
+
+.price_left__mprice .old {
+  opacity: .6;
+  margin-bottom: .2em;
+  text-decoration: line-through
+}
+
+.price_mnav .price_mnav__list {
+  position: absolute;
+  display: none;
+  top: 60px;
+  background: #fff;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid #000;
+  padding: 20px;
+  width: 90%;
+  -webkit-border-radius: 10px;
+  border-radius: 10px
+}
+
+.price_mnav .price_mnav__list li {
+  margin: 10px 0;
+  font-weight: 700
+}
+
+.price_mnav .btn-drop {
+  padding: 10px 10px;
+  background: #fff;
+  border: 1px solid #000;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative
+}
+
+.price_mnav .btn-drop:first-child {
+  width: 70%;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0
+}
+
+.price_mnav .btn-drop:nth-child(2) {
+  width: 28%;
+  text-align: right;
+  left: -10px;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent
+}
+
+.price {
+  padding: 10vh 0
+}
+
+.price_nav {
+  margin: 2em 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative
+}
+
+.price_nav::after {
+  position: absolute;
+  width: 100vw;
+  height: 2px;
+  content: '';
+  left: -18%;
+  top: 100%;
+  background: #d2d2d2;
+  display: none
+}
+
+.price_nav .price_nav__item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px 20px;
+  text-align: center;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  position: relative;
+  cursor: pointer
+}
+
+.price_nav .price_nav__item:hover {
+  background: #3150ff;
+  color: #fff
+}
+
+.price_nav .price_nav__item.active {
+  background: #3150ff;
+  color: #fff
+}
+
+.price_nav .price_nav__item.active::after {
+  position: absolute;
+  border: 12px solid transparent;
+  border-top: 10px solid #3150ff;
+  top: 95%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 1;
+  content: '';
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 20px;
+  height: 20px
+}
+
+.thou {
+  text-decoration: line-through
+}
+
+.price_tabs__item {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .2);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 .675em rgba(0, 0, 0, .2);
+  box-shadow: 0 0 .675em rgba(0, 0, 0, .2);
+  position: absolute;
+  left: -9999px;
+  opacity: 0
+}
+
+.price_tabs__item.active {
+  opacity: 1;
+  position: relative;
+  left: 0;
+  opacity: 1
+}
+
+.price_left__pic {
+  position: relative;
+  overflow: hidden
+}
+
+.price_left__pic img {
+  -webkit-transition: all .85s ease;
+  -o-transition: all .85s ease;
+  transition: all .85s ease;
+  position: relative
+}
+
+.price_left__pic:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1)
+}
+
+.price_left__present {
+  margin: 1.5rem 0
+}
+
+.price_left__present .price_present__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.4rem
+}
+
+.price_left__present .price_present__list li {
+  margin-top: 10px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  font-size: 1.2rem;
+  padding-left: 50px
+}
+
+.price_left__present .price_present__list li::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 42px;
+  width: 42px;
+  background-image: url(../img/icon/gift.png)
+}
+
+.price_center__ul {
+  position: relative
+}
+
+.price_center__ul li {
+  position: relative;
+  padding-left: 50px;
+  margin: .5rem 0;
+  font-size: .8rem
+}
+
+.price_center__ul li:first-child {
+  padding-left: 30px;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 700
+}
+
+.price_center__ul li:first-child::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/icon/arrow_small.png);
+  background-position: center;
+  background-repeat: no-repeat
+}
+
+.price_center__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.3rem
+}
+
+.price_center__price {
+  margin: 3rem 0 0;
+  position: relative
+}
+
+.price_center__price .old {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  color: grey
+}
+
+.price_center__price .new {
+  margin-top: .2rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #3150ff;
+  font-weight: 700
+}
+
+.price_box {
+  background: #f3f3c5;
+  margin-bottom: 1rem;
+  padding: 20px
+}
+
+.price_box .price_box__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase
+}
+
+.price_box .price_box__icon {
+  margin: .5rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.price_box .price_box__icon li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1
+}
+
+.price_box .price_box__price {
+  margin: .75rem 0 0
+}
+
+.price_box .price_box__price .old {
+  color: grey;
+  font-size: 1.2rem;
+  text-decoration: line-through
+}
+
+.price_box .price_box__price .new {
+  color: #3150ff;
+  font-weight: 700;
+  font-size: 1.7rem
+}
+
+.price_mlist {
+  margin: 1rem 0
+}
+
+.price_mlist .mlist_title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase
+}
+
+.mlist_ul li {
+  font-size: .8rem;
+  margin: .2rem 0
+}
+
+.mlist_ul li.active {
+  position: relative;
+  left: 0;
+  opacity: 1
+}
+
+.mlist_ul li.hide {
+  position: absolute;
+  left: -9999px;
+  opacity: 0
+}
+
+.mlist_ul li.hidden {
+  display: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1rem
+}
+
+.mlist_ul li.more {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1rem
+}
+
+.mlist_ul.active li.hide {
+  position: relative;
+  left: 0;
+  opacity: 1
+}
+
+.mlist_ul.active li.more {
+  display: none
+}
+
+.mlist_ul.active li.hidden {
+  display: block
+}
+
+.price_mbox {
+  background: #f3f3c5;
+  margin: .5rem 0;
+  padding: 8px
+}
+
+.price_mbox.active .mbox_title span {
+  -webkit-transform: rotate(46deg);
+  -ms-transform: rotate(46deg);
+  transform: rotate(46deg)
+}
+
+.price_mbox.active .mbox_list {
+  position: relative;
+  left: 0;
+  opacity: 1
+}
+
+.price_mbox .mbox_title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: .5rem 0;
+  position: relative
+}
+
+.price_mbox .mbox_title span {
+  font-size: 2em;
+  position: absolute;
+  right: 5px;
+  top: -6px;
+  line-height: 1
+}
+
+.price_mbox .mbox_list {
+  position: absolute;
+  left: -9999px;
+  opacity: 0
+}
+
+.price_mbox .mbox_list.active {
+  position: relative;
+  left: 0;
+  opacity: 1
+}
+
+.mbox_list__icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: .5rem 0
+}
+
+.mbox_list__icon li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1
+}
+
+.mbox_list__list {
+  margin: 1rem 0
+}
+
+.mbox_list__list li {
+  font-size: .9rem
+}
+
+.mbox_price {
+  position: relative
+}
+
+.mbox_price .old {
+  color: grey;
+  text-decoration: line-through
+}
+
+.mbox_price .new {
+  color: #3150ff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: .5rem 0
+}
