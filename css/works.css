@@ -578,4 +578,12 @@ section#works .works_list [class^=col] {
   .slick-works .slick-works_item img{
     width: 100%;
   }
+  .slick-next {
+    right: 20px !important;
+    z-index: 1;
+  }
+  .slick-prev {
+    left: 20px !important;
+    z-index: 1;
+  }
 }
