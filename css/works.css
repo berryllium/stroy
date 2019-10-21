@@ -572,18 +572,36 @@ section#works .works_list [class^=col] {
   .b-gallery-descr__value {
     font-size: 18px;
   }
+  .works_tabs__item{
+    display: block;
+  }
   .works_tabs__item .slick-works {
     display: block;
   }
+
+  .works_tabs__item {
+    visibility: hidden;
+    height: 0;
+  }
+  
+  .works_tabs__item.active {
+    visibility: visible;
+    height: auto;
+  }
+
   .slick-works .slick-works_item img{
     width: 100%;
   }
   .slick-next {
-    right: 20px !important;
+    width: 30px!important;
+    height: 30px!important;
+    right: 15px !important;
     z-index: 1;
   }
   .slick-prev {
-    left: 20px !important;
+    width: 30px!important;
+    height: 30px!important;
+    left: 15px !important;
     z-index: 1;
   }
 }
